@@ -1,9 +1,0 @@
-import pandas as pd
-import tensorflow as tf
-import matplotlib.pyplot as plt
-import numpy as np
-%matplotlib inline
-df=pd.read_csv('/home/sarthak/Desktop/Machine Learning for Physicist/exoTrain.csv')
-df.head(38)
-dataframe = df.sample(frac=1).reset_index(drop=True)
-dataframe
