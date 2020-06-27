@@ -1,0 +1,6 @@
+model=Sequential()
+model.add(Dense(1000, input_dim=3197, activation='sigmoid'))
+model.add(Dense(100, activation='sigmoid'))
+model.add(Dense(1, activation='sigmoid'))
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.fit(training_df, labels, epochs=500, batch_size=50)
